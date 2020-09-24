@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working with events</title>
+</head>
+<body>
+    <h1>working with events</h1>
+    <button id="btn" onclick="displaymessage('james')">click me</button>
+
+    <script>
+       // select the element of interest
+        let btn = document.getElementById("btn");
+
+       // Bind the element selected to an event handler
+        btn.addEventListener('click',displayMessage);
+
+        function displayMessage(){
+            alert("Hi, how are you today?")
+        }
+
+
+        // Bind the element selected to an event handler
+       // btn.onclick = function(){
+       //     alert("hello world!");
+       // }
+
+       //function displaymessage(name){
+       //    alert(`Hello ${name}`);
+      // }
+    </script>
+</body>
+</html>
